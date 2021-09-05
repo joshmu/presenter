@@ -1,6 +1,7 @@
 # ZEN
 
 Zen mode for OSX
+
 Useful for presentations, demos, and minimalism
 
 ## use it
