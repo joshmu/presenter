@@ -1,15 +1,16 @@
 const { exec } = require('../helper')
-const { check_dnd_status } = require('../scripts/dnd_status')
-const { notify: notifyScript } = require('./notify')
+const { check_dnd_status } = require('../scripts')
 
-module.exports.checkDndStatus = async ({ notify = false } = {}) => {
+module.exports.checkDndStatus = async ({ verbose = false } = {}) => {
   try {
     const { stdout, stderr } = await exec(check_dnd_status())
     if (stderr) throw stderr
 
     const status = stdout.trim() === 'true'
-    if (notify) notifyScript(status ? 'ENABLED' : 'DISABLED')
-    console.log(status)
+    const output = status ? 'ENABLED' : 'DISABLED'
+
+    if (verbose) console.log(output)
+
     return status
   } catch (err) {
     console.error(err)
