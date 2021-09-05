@@ -28,3 +28,7 @@ Useful for presentations, demos, and minimalism
 ### upcoming
 
 - Cron job to detect when in Zoom or Slack meetings to auto enable and disable.
+
+### notes
+
+- This has been made to be compatible with Mac OS _Big Sur_
