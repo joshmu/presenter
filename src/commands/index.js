@@ -1,15 +1,17 @@
-const { checkDndStatus } = require('./checkDndStatus')
-const { disableDnd } = require('./disableDnd')
-const { enableDnd } = require('./enableDnd')
+const { setDnd, checkDnd, toggleDnd } = require('./dnd')
 const { notify } = require('./notify')
 const { inZoomMeeting } = require('./inZoomMeeting')
-const { toggle } = require('./toggle')
+const { set, toggle } = require('./global')
+const { setHideDesktop, toggleHideDesktop } = require('./hideDesktop')
 
 module.exports = {
-  checkDndStatus,
-  disableDnd,
-  enableDnd,
+  set,
+  toggle,
+  setDnd,
+  checkDnd,
+  toggleDnd,
   notify,
   inZoomMeeting,
-  toggle,
+  setHideDesktop,
+  toggleHideDesktop,
 }
