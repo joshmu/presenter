@@ -3,14 +3,14 @@
 const {
   set,
   toggle,
+  checkDnd,
+  setDnd,
+  toggleDnd,
+  setHideDesktop,
+  toggleHideDesktop,
+  toggleHideMenubar,
   notify,
   inZoomMeeting,
-  toggleHideDesktop,
-
-  setHideDesktop,
-  checkDnd,
-  toggleDnd,
-  setDnd,
 } = require('./commands')
 
 const { COMMANDS } = require('./constants')
@@ -28,6 +28,8 @@ const {
   HIDE_DESKTOP_T,
   HIDE_DESKTOP_ON,
   HIDE_DESKTOP_OFF,
+  HIDE_MENUBAR_TOGGLE,
+  HIDE_MENUBAR_T,
   IN_ZOOM,
   NOTIFY,
   LIST,
@@ -63,15 +65,19 @@ const {
     case DND_OFF:
       output = await setDnd({ flag: false })
       break
-      case HIDE_DESKTOP_TOGGLE:
-      case HIDE_DESKTOP_T:
-        output = await toggleHideDesktop()
-        break
+    case HIDE_DESKTOP_TOGGLE:
+    case HIDE_DESKTOP_T:
+      output = await toggleHideDesktop()
+      break
     case HIDE_DESKTOP_ON:
       output = await setHideDesktop({ flag: true })
       break
     case HIDE_DESKTOP_OFF:
       output = await setHideDesktop({ flag: false })
+      break
+    case HIDE_MENUBAR_TOGGLE:
+    case HIDE_MENUBAR_T:
+      output = await toggleHideMenubar()
       break
     case IN_ZOOM:
       output = (await inZoomMeeting({ verbose: true }))

@@ -1,3 +1,4 @@
+const { toggleHideMenubar } = require('.')
 const { setDnd, checkDnd } = require('./dnd')
 const { setHideDesktop } = require('./hideDesktop')
 
@@ -17,6 +18,7 @@ async function toggle({ verbose = false } = {}) {
 
     await setDnd({ flag: !status, verbose })
     await setHideDesktop({ flag: status, verbose })
+    await toggleHideMenubar()
   } catch (err) {
     console.error(err)
   }

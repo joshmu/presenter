@@ -12,6 +12,8 @@ module.exports.COMMANDS = {
   HIDE_DESKTOP_T: 'desk-t',
   HIDE_DESKTOP_ON: 'desk-on',
   HIDE_DESKTOP_OFF: 'desk-off',
+  HIDE_MENUBAR_TOGGLE: 'menu-toggle',
+  HIDE_MENUBAR_T: 'menu-t',
   IN_ZOOM: 'zoom',
   NOTIFY: 'notify',
   LIST: 'list',

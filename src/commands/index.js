@@ -3,6 +3,7 @@ const { notify } = require('./notify')
 const { inZoomMeeting } = require('./inZoomMeeting')
 const { set, toggle } = require('./global')
 const { setHideDesktop, toggleHideDesktop } = require('./hideDesktop')
+const { setHideMenubar, toggleHideMenubar } = require('./hideMenubar')
 
 module.exports = {
   set,
@@ -14,4 +15,6 @@ module.exports = {
   inZoomMeeting,
   setHideDesktop,
   toggleHideDesktop,
+  setHideMenubar,
+  toggleHideMenubar,
 }
