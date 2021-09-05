@@ -17,6 +17,7 @@ const {
   DND_ENABLE,
   DND_DISABLE,
   NOTIFY,
+  LIST,
   HELP,
 } = COMMANDS
 
@@ -41,10 +42,12 @@ const {
       output = await disableDnd()
       break
     case NOTIFY:
-      await notify(msg || 'Hello!')
+      await notify({ msg: msg || 'Hello!' })
       break
+    case LIST:
     case HELP:
-      console.log(`Available Commands: ${Object.values(COMMANDS)}`)
+      console.log(`Available Commands: \n${Object.values(COMMANDS)}`)
+      break
     default:
       output = await toggle()
   }

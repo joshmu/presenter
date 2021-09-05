@@ -6,5 +6,6 @@ module.exports.COMMANDS = {
   DND_ENABLE: 'enable',
   DND_DISABLE: 'disable',
   NOTIFY: 'notify',
+  LIST: 'list',
   HELP: 'help',
 }
