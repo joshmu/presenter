@@ -13,6 +13,8 @@ module.exports.inZoomMeeting = async ({ verbose = false } = {}) => {
 
     return Boolean(output)
   } catch (err) {
-    console.error(err)
+    // * error is the equivalent to not being in a meeting
+    // console.error(err)
+    return false
   }
 }

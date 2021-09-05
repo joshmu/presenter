@@ -13,6 +13,7 @@ Building a workflow which will configure my setup when doing presentations & dem
 - `[toggle|]` - toggle, this is the default when no command is provided
 - `[on|enable]` - turn on
 - `[off|disable]` - turn off
+- `zoom` - check if in zoom meeting
 - `[help|list]` - list of available commands
 
 ### upcoming

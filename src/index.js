@@ -6,6 +6,7 @@ const {
   enableDnd,
   notify,
   toggle,
+  inZoomMeeting,
 } = require('./commands')
 
 const { COMMANDS } = require('./constants')
@@ -16,6 +17,7 @@ const {
   DND_TOGGLE,
   DND_ENABLE,
   DND_DISABLE,
+  IN_ZOOM,
   NOTIFY,
   LIST,
   HELP,
@@ -40,6 +42,11 @@ const {
     case OFF:
     case DND_DISABLE:
       output = await disableDnd()
+      break
+    case IN_ZOOM:
+      output = (await inZoomMeeting({ verbose: true }))
+        ? 'IN MEETING'
+        : 'NOT IN MEETING'
       break
     case NOTIFY:
       await notify({ msg: msg || 'Hello!' })
