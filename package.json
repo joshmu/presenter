@@ -1,0 +1,26 @@
+{
+  "name": "presenter",
+  "version": "1.0.0",
+  "description": "Presentation setup for OSX",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshmu/presenter.git"
+  },
+  "keywords": [
+    "presenter",
+    "presentation",
+    "josh",
+    "mu"
+  ],
+  "author": "Josh Mu <hello@joshmu.dev> (https://joshmu.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshmu/presenter/issues"
+  },
+  "homepage": "https://github.com/joshmu/presenter#readme",
+  "dependencies": {}
+}
