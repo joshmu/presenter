@@ -7,6 +7,8 @@ Useful for presentations, demos, and minimalism
 
 `npm start [command]`
 
+> I use this as an `alias` and also have it configured as a workflow using [Alfred](https://www.alfredapp.com/)
+
 ## commands
 
 - `[toggle|t]` - toggle all available plugins
