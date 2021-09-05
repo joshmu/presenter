@@ -26,10 +26,10 @@ Useful for presentations, demos, and minimalism
 - `zoom` - check if in zoom meeting
 - `[help|list]` - list of available commands
 
-### upcoming
+## upcoming
 
 - Cron job to detect when in Zoom or Slack meetings to auto enable and disable.
 
-### notes
+## notes
 
 - This has been made to be compatible with **Mac OS Big Sur**
