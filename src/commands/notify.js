@@ -3,7 +3,7 @@ const { notify } = require('../scripts')
 
 module.exports.notify = async ({
   msg = '',
-  title = 'PRESENTER',
+  title = 'ZEN',
   verbose = false,
 } = {}) => {
   try {

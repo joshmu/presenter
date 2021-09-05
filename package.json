@@ -1,26 +1,26 @@
 {
-  "name": "presenter",
+  "name": "zen",
   "version": "1.0.0",
-  "description": "Presentation setup for OSX",
-  "main": "index.js",
+  "description": "Zen mode for OSX, for presentations, demo, and minimalizm",
+  "main": "src/main.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshmu/presenter.git"
+    "url": "git+https://github.com/joshmu/zen.git"
   },
   "keywords": [
-    "presenter",
-    "presentation",
-    "josh",
-    "mu"
+    "zen",
+    "zen mode",
+    "osx",
+    "josh mu"
   ],
   "author": "Josh Mu <hello@joshmu.dev> (https://joshmu.dev/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joshmu/presenter/issues"
+    "url": "https://github.com/joshmu/zen/issues"
   },
-  "homepage": "https://github.com/joshmu/presenter#readme",
+  "homepage": "https://github.com/joshmu/zen#readme",
   "dependencies": {}
 }

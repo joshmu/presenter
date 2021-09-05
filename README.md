@@ -1,7 +1,7 @@
-# presenter
+# ZEN
 
-Presentation setup for OSX
-Building a workflow which will configure my setup when doing presentations & demos
+Zen mode for OSX
+Useful for presentations, demos, and minimalism
 
 ## use it
 
