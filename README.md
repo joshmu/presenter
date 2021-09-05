@@ -31,4 +31,4 @@ Useful for presentations, demos, and minimalism
 
 ### notes
 
-- This has been made to be compatible with Mac OS _Big Sur_
+- This has been made to be compatible with **Mac OS Big Sur**
